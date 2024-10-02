@@ -1,0 +1,34 @@
+{% load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %} ">
+    <link rel="stylesheet" href=" https://use.fontawesome.com/releases/v5.8.2/css/all.css ">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/images.jpg' %}" alt="Logo">
+        <span class="logo">Math</span>
+        <h3>Navigation</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Main</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> About me</li></a>
+            <a href="{%url 'news_home' %}"><li><i class="fas fa-paper-plane"></i> News</li></a>
+            <a href=""><li><i class="fas fa-paper-plane"></i> Contact</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Add messsage</button></li></a>
+
+        </ul>
+    </aside>
+    <main>
+    {% block content %}
+    {% endblock %}
+    </main>
+
+</body>
+</html>

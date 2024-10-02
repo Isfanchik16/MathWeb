@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}From on adding statives{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>From on adding statives</h1>
+        <form method="post" >
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.full_text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Add statives</button>
+        </form>
+    </div>
+{% endblock %}
