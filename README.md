@@ -19,5 +19,5 @@
 
 ## Usage
 Admin Panel Login:
-Username: Admin
-Password: 1212
+   Username: Admin
+   Password: 1212
