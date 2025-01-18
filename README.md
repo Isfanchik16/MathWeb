@@ -1,5 +1,3 @@
-Log in For Admin Panle : Username is "Admin" and Password is "1212"
-
 # MathWeb
 
 
@@ -17,13 +15,9 @@ Log in For Admin Panle : Username is "Admin" and Password is "1212"
    git clone https://github.com/yourusername/MathWeb.git
    cd MathWeb
    
-2.**Set up the environment**:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-cd MathWeb
 
 
-
-
-
+## Usage
+Admin Panel Login:
+Username: Admin
+Password: 1212
