@@ -1,6 +1,8 @@
 # MathWeb
 
 
+## Description
+MathWeb is a web application designed to access mathematical tools and resources. 
 
 ## Features
 - User authentication for the admin panel
